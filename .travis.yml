@@ -23,6 +23,7 @@ before_install:
 
 install:
     - python setup.py build && python setup.py install
+    - pip3 install h5py
 
 script:
     - pytest
