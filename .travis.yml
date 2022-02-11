@@ -1,12 +1,12 @@
 dist: focal
 language: python
-
+arch:
+  - arm64
+  - amd64
 matrix:
     include:
         - python: '3.8'
           env:
-          arch: amd64
-          arch: arm64
     fast_finish: true
 
 cache:
